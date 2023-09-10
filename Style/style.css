@@ -1,19 +1,35 @@
 :root{
---darkViolet: hsl(256, 26%, 20%)
---grayishBlue: hsl(216, 30%, 68%)
---veryDarkViolet: hsl(270, 9%, 17%)
---darkGrayishViolet: hsl(273, 4%, 51%)
---veryLightGray: hsl(0, 0%, 98%)
+--darkViolet: hsl(256, 26%, 20%);
+--grayishBlue: hsl(216, 30%, 68%);
+--veryDarkViolet: hsl(270, 9%, 17%);
+--darkGrayishViolet: hsl(273, 4%, 51%);
+--veryLightGray: hsl(0, 0%, 98%);
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
 }
+
+body{
+    max-width: 100%;
+}
+
+a, li{
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--darkGrayishViolet);
+}
+
 
 .mobile-hamburger{
     display: none;
+    
 }
 
 .mobile-close{
@@ -36,12 +52,90 @@
     display: none;
 }
 
+.navbar{
+    display: flex;
+    padding: 1rem 8rem;
+    align-items: center;
+    justify-content: space-between;
+}
 
-/* For heading 
-font-family: 'DM Serif Display', serif;
-*/
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 
-/* For Body font 
-font-family: 'Karla', sans-serif;
-*/
+.hero-section{
+    width: 100%;
+    height: 30rem;
+    background-color:var(--darkViolet);
+    color: #fff;
+    padding: 0 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+hr{
+    width: 8rem;
+    margin-top: 4rem;
+}
+.bg-left-desktop{
+    width: 130px;
+    position: absolute;
+    left: 0;
+    bottom: -8rem;
+}
+
+.rightSideInHero{
+    display: flex;
+    justify-content: end;
+}
+
+.img-section img{
+    margin-top: 4rem;
+    width: 30rem;
+    height: 31rem;
+}
+
+.bg-pattern-intro-right-desktop{
+    width: 320px;
+    position: absolute;
+    right: 0;
+}
+
+.headingInHero{
+    font-size: 4.5rem;
+    padding-top: 2rem;
+    line-height: 4rem;
+}
+
+.descriptionInHero{
+    font-size: 1rem;
+    padding-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.btnInHero{
+    margin-top: 2rem;
+}
+
+.viewBtnNavbar{
+    padding: 0.6rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid black;
+}
+
+.viewBtn{
+    padding: 0.6rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
 
