@@ -13,9 +13,6 @@
     font-family: 'Karla', sans-serif;
 }
 
-body{
-    max-width: 100%;
-}
 
 a, li{
     text-decoration: none;
@@ -25,7 +22,9 @@ a, li{
     font-weight: 600;
     color: var(--darkGrayishViolet);
 }
-
+.nav-right-side a:hover{
+    color: var(--veryDarkViolet);
+}
 
 .mobile-hamburger{
     display: none;
@@ -127,6 +126,12 @@ hr{
     font-weight: 600;
     background: transparent;
     border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.viewBtnNavbar:hover{
+    background-color: var(--veryDarkViolet);
+    color: #fff;
 }
 
 .viewBtn{
@@ -137,6 +142,17 @@ hr{
     background: transparent;
     border: 1px solid white;
     color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.viewBtn:hover{
+    background-color: #fff;
+    color: black;
+}
+.howWeWorkbtn:hover{
+    background-color: #fff;
+    color: black;
 }
 
 .second-section{
@@ -176,18 +192,21 @@ hr{
 }
 
 .third-section{
-    margin-top: 10rem;
-    padding: 0 8rem;
-}
-
-.thirdSectionFind{
+    margin: 10rem 8rem;
     height: 14rem;
     background-color: var(--darkViolet);
     color: #fff;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
-    place-content: center;
+}
+
+.bg-how-desktop{
+    width: 385px;
+    position: absolute;
+    right: 0;
+    left: 52rem;
+    bottom: -52rem;
 }
 
 .headingThirdLeftSide h1{
@@ -202,40 +221,64 @@ hr{
     background: transparent;
     border: 1px solid white;
     color: white;
-    z-index: 5;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
 }
+
 
 .footer-bg-desktop{
     position: absolute;
     left: 0;
-    z-index: -1;
-    display: none;
 }
 
 .footer-section{
     background-color: var(--veryLightGray);
-    margin-top: 10rem;
     padding: 0 8rem;
 }
 
 .logo-and-social-media{
    padding: 2rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.social-media-right ul{
-    display: flex;
-    gap: 0.5rem;
-    justify-content: end;
+.logo-and-social-media  ul{
+   display: flex;
+   gap: 1.5rem;
+}
+.icon:hover{
+    color: var(--darkViolet);
 }
 
 .footer-line{
     width: 100%;
-    border: 1px solid var(--darkGrayishViolet);
+    border: 0.1px solid var(--darkViolet);
 }
 
-/* .footer-last{
+
+.last{
+    padding: 2rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-} */
+}
+
+.last h1{
+    padding-bottom: 1.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--darkGrayishViolet);
+}
+
+.last li a{
+    line-height: 2rem;
+    color: var(--veryDarkViolet);
+}
+
+.last a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 320px) {
+    
+}
