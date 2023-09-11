@@ -93,8 +93,8 @@ hr{
 
 .img-section img{
     margin-top: 4rem;
-    width: 30rem;
-    height: 31rem;
+    width: 100%;
+    height: 75%;
 }
 
 .bg-pattern-intro-right-desktop{
@@ -104,9 +104,10 @@ hr{
 }
 
 .headingInHero{
-    font-size: 4.5rem;
+    font-size: 4rem;
     padding-top: 2rem;
     line-height: 4rem;
+    font-family: 'DM Serif Display', serif;
 }
 
 .descriptionInHero{
@@ -138,4 +139,104 @@ hr{
     color: white;
 }
 
+.second-section{
+    margin-top: 10rem;
+    padding: 0 8rem;
+}
 
+.headingInSection{
+    padding-top: 2rem;
+    font-size: 3.5rem;
+    font-family: 'DM Serif Display', serif;
+    color: var(--veryDarkViolet);
+}
+
+.secondSnappy{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2rem;
+}
+
+.Snappy-img img{
+    width: 70px;
+    padding-bottom: 1rem;
+}
+
+.Snappy-heading h1{
+    font-family: 'DM Serif Display', serif;
+    color: var(--veryDarkViolet);
+    padding-bottom: 1rem;
+}
+
+.Snappy-heading p{
+    width: 95%;
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: var(--darkGrayishViolet);
+}
+
+.third-section{
+    margin-top: 10rem;
+    padding: 0 8rem;
+}
+
+.thirdSectionFind{
+    height: 14rem;
+    background-color: var(--darkViolet);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    place-items: center;
+    place-content: center;
+}
+
+.headingThirdLeftSide h1{
+    font-size: 3rem;
+    font-family: 'DM Serif Display', serif;
+}
+.howWeWorkbtn{
+    padding: 0.6rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    z-index: 5;
+}
+
+.footer-bg-desktop{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+
+.footer-section{
+    height: 25rem;
+    background-color: var(--veryLightGray);
+    margin-top: 10rem;
+    padding: 0 8rem;
+}
+
+.logo-and-social-media{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 2rem 0;
+}
+
+.social-media-right ul{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: end;
+}
+
+.footer-line{
+    width: 100%;
+    border: 1px solid var(--darkGrayishViolet);
+}
+
+.footer-last{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
