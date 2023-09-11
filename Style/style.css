@@ -199,15 +199,15 @@ hr{
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    place-content: center;
 }
 
-.bg-how-desktop{
+/* .bg-how-desktop{
     width: 385px;
-    position: absolute;
-    right: 0;
-    left: 52rem;
-    bottom: -52rem;
-}
+    position: relative;
+    top: -2.5rem;
+    right: -10rem;
+} */
 
 .headingThirdLeftSide h1{
     font-size: 3rem;
