@@ -213,16 +213,15 @@ hr{
 }
 
 .footer-section{
-    height: 25rem;
     background-color: var(--veryLightGray);
     margin-top: 10rem;
     padding: 0 8rem;
 }
 
 .logo-and-social-media{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .social-media-right ul{
@@ -236,7 +235,7 @@ hr{
     border: 1px solid var(--darkGrayishViolet);
 }
 
-.footer-last{
+/* .footer-last{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+} */
