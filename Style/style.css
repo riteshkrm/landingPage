@@ -278,3 +278,7 @@ hr{
 .last a:hover{
     text-decoration: underline;
 }
+
+.copy-right{
+     padding: 1rem 0;
+}
