@@ -295,7 +295,7 @@ hr {
     display: none;
   }
 
-  .mobile-hamburger.active {
+  .mobile-hamburger {
     display: block;
   }
 
