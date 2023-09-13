@@ -1,10 +1,15 @@
-// 'use strict'
-// const navRightSide = document.querySelector('.nav-right-side');
-// const hamburger = document.querySelector('.mobile-hamburger');
-// const close = document.querySelector('.mobile-close');
+"use strict";
+const hamburger = document.querySelector(".mobile-hamburger");
+const listUl = document.querySelector(".hide");
+const close = document.querySelector('.mobile-close');
+const icon = document.querySelector('.icon')
 
+hamburger.addEventListener("click", () => {
+  listUl.classList.toggle("active");
+});
 
-// hamburger.addEventListener('click', (menu)=>{
-//     hamburger.classList.toggle('active')
-//     navRightSide.classList.toggle('active')
-// })
+// hamburger.onclick = function(){
+//     if (icon.classList.contains('hamburger')){
+//         icon.classList.replace('hamburger', 'close')
+//     }
+// }
